@@ -3,5 +3,12 @@ git add .
 git commit -m "Add file projekt1.cpp"
 git remote add origin https://github.com/Denchik117/PracaDomowa1.git
 git push -u origin main
+
 git branch g1
 git branch g2
+
+git checkout g1
+git add .
+git commit -m "Add factorial function"
+
+
