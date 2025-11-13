@@ -11,4 +11,8 @@ git checkout g1
 git add .
 git commit -m "Add factorial function"
 
+git add .
+git commit -m "Add option #1 in menu"
+
+
 
