@@ -14,5 +14,22 @@ git commit -m "Add factorial function"
 git add .
 git commit -m "Add option #1 in menu"
 
+git checkout g2
+git add .
+git commit -m "Add function checking if number is prime"
 
+git add .
+git commit -m "Add option #1 in menu"
+
+git push origin g1
+git push origin g2
+
+git checkout main
+git merge g1
+
+git merge g2
+git add .
+git commit -m "Resolve merge conflict between g1 and g2"
+
+git push origin main
 
