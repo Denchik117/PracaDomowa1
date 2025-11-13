@@ -5,6 +5,13 @@ using namespace std;
 int silnia(int n){
 	if(n <= 0) return 1;
 	else return n*silnia(n-1);
+
+bool czy_pierwsza(int n) {
+    if(n <= 1) return false;
+    for(int i = 2; i * i <= n; i++) {
+        if(n % i == 0) return false;
+    }
+    return true;
 }
 
 int main() {
@@ -18,6 +25,10 @@ int main() {
         cout << "MENU" << endl;
 	cout << "1. Silnia" << endl;
 	if(wyjscie == 1) cout << a << "! = " << silnia(a) << endl;
+	cout << "2. Sprawdzenie czy liczba jest pierwsza." << endl;
+	if(wyjscie == 2){
+		if(czyPierwsza(a)) cout << "Licba " << a << " jest liczba pierwsza." << endl;
+		else cout << "Liczba " << a << " nie jest liczba pierwsza" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
         cin >> wyjscie;
