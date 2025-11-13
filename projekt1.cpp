@@ -19,6 +19,10 @@ int main() {
         cout << endl;
         cout << endl;
         cout << "MENU" << endl;
+	cout << "1. Sprawdzenie czy liczba jest pierwsza." << endl;
+	if(wyjscie == 1){
+		if(czyPierwsza(a)) cout << "Licba " << a << " jest liczba pierwsza." << endl;
+		else cout << "Liczba " << a << " nie jest liczba pierwsza" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
         cin >> wyjscie;
